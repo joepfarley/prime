@@ -1,7 +1,7 @@
 import math
 
-def main():
-	count = 9999999999
+def primeCount(x):
+	count = x
 
 	while True:
 		isprime = True
@@ -16,4 +16,6 @@ def main():
 
 		count +=2
 
-main()
+
+primeCount(input("Enter an odd number to start with: "))
+
