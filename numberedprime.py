@@ -1,11 +1,10 @@
 import math
 
-def primeCount(x=3,y=0):
+def primeCount(x,y=0,z=1001):
 	count = x
-
-	while True:
+	bount = x
+	while bount<z:
 		if y == 0:raw_input("")
-		else:pass
 		isprime = True
 
 		for x in range(3,int(math.sqrt(count)+1),3):
@@ -15,7 +14,7 @@ def primeCount(x=3,y=0):
 
 		if isprime:
 			print count
-
+			bount = bount +1
 		count +=2
 
 
